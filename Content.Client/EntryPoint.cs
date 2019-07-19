@@ -114,6 +114,8 @@ namespace Content.Client
             factory.RegisterIgnore("BallisticBullet");
             factory.RegisterIgnore("HitscanWeaponCapacitor");
 
+            factory.RegisterIgnore("ChemDispenser");
+
             prototypes.RegisterIgnore("material");
 
             factory.RegisterIgnore("PowerCell");

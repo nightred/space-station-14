@@ -2,6 +2,7 @@
 using Content.Server.GameObjects;
 using Content.Server.GameObjects.Components;
 using Content.Server.GameObjects.Components.Power;
+using Content.Server.GameObjects.Components.Chemistry;
 using Content.Server.GameObjects.Components.Interactable.Tools;
 using Content.Server.Interfaces.GameObjects;
 using Content.Server.Placement;
@@ -159,6 +160,9 @@ namespace Content.Server
             factory.Register<LatheComponent>();
             factory.RegisterReference<LatheComponent, IActivate>();
             factory.Register<LatheDatabaseComponent>();
+
+            factory.Register<ChemDispenserComponent>();
+            factory.RegisterReference<ChemDispenserComponent, IActivate>();
 
             factory.RegisterReference<LatheDatabaseComponent, SharedLatheDatabaseComponent>();
 

@@ -1,0 +1,21 @@
+﻿- type: entity
+  id: chem_dispenser
+  name: "Chemistry Dispenser"
+  components:
+  - type: Clickable
+  - type: BoundingBox
+  - type: Sprite
+    sprite: "Buildings/chem_dispenser.rsi"
+    state: idle
+  - type: Icon
+    sprite: "Buildings/chem_dispenser.rsi"
+    state: idle
+  - type: BoundingBox
+  - type: Collidable
+  - type: SnapGrid
+    offset: Center
+  - type: ChemDispenser
+  - type: UserInterface
+    interfaces:
+    - key: enum.ChemDispenserUiKey.Key
+      type: ChemDispenserBoundUserInterface

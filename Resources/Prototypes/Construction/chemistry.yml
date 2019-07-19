@@ -1,0 +1,21 @@
+﻿- type: construction
+  name: Chem Dispenser
+  id: ChemDispenser
+  keywords: [chemical, dispenser, chemistry]
+  category: Machines/chemistry
+  placementmode: SnapgridCenter
+  description: A Chemical Dispenser.
+  icon:
+    sprite: Buildings/chem_dispenser.rsi
+    state: idle
+  result: ChemDispenser
+  steps:
+  - material: Metal
+    amount: 10
+    icon:
+      sprite: Buildings/chem_dispenser.rsi
+      state: idle
+  - material: Glass
+    amount: 5
+  - material: Cable
+    amount: 1
